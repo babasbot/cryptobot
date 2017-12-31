@@ -1,0 +1,3 @@
+en:
+  errors:
+    missing_authorization_token: An authorization token is required to authorize this bot. Use the BotFather /token command to generate an authorization token.

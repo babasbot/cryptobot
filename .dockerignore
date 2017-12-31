@@ -1,0 +1,6 @@
+.dockerignore
+.editorconfig
+.env
+.git
+.gitignore
+.ruby-version
