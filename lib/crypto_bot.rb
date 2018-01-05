@@ -27,7 +27,7 @@ end
 
 Telegram::Bot::Client.run(authorization_token) do |bot|
   bot.listen do |message|
-    case message.text
+    case CryptoBot::Command.parse(message.text)
     when '/btc'
       CryptoBot::Command::BTC.execute(bot, message)
     when '/eth'

@@ -1,7 +1,19 @@
 module CryptoBot
   class Command
-    def self.execute(*args)
-      new(*args).execute
+    class << self
+      def execute(*args)
+        new(*args).execute
+      end
+
+      def parse(message)
+        message.match(pattern)&.[]('command')
+      end
+
+      private
+
+        def pattern
+          /\A(?<command>\/[[:alnum:]\_]+)(@therealcryptobot)?\z/
+        end
     end
 
     def initialize(bot, message)
