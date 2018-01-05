@@ -1,7 +1,9 @@
 module CryptoBot
   class Command
-    def self.execute(*args)
-      new(*args).execute
+    class << self
+      def execute(*args)
+        new(*args).execute
+      end
     end
 
     def initialize(bot, message)
