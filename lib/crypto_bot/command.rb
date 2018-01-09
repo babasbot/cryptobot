@@ -6,7 +6,7 @@ module CryptoBot
       end
 
       def parse(message)
-        message.match(pattern)&.[]('command')
+        message&.match(pattern)&.[]('command')
       end
 
       private
