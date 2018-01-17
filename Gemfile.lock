@@ -38,6 +38,7 @@ GEM
       inflecto
       virtus
     thread_safe (0.3.6)
+    vcr (4.0.0)
     virtus (1.0.5)
       axiom-types (~> 0.1)
       coercible (~> 1.0)
@@ -52,6 +53,7 @@ DEPENDENCIES
   i18n
   rspec
   telegram-bot-ruby
+  vcr
 
 BUNDLED WITH
    1.16.1
