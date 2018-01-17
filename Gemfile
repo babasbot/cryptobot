@@ -3,4 +3,7 @@ source 'https://rubygems.org'
 gem 'telegram-bot-ruby'
 gem 'i18n'
 gem 'dotenv'
-gem 'rspec'
+
+group :test do
+  gem 'rspec'
+end
