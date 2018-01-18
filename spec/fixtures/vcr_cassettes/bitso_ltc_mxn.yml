@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitso.com/v3/ticker?book=ltc_mxn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bitso.com
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 18 Jan 2018 06:45:52 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dddbb8ab31463859a725b050ffbd4a06a1516257952; expires=Fri, 18-Jan-19
+        06:45:52 GMT; path=/; domain=.bitso.com; HttpOnly
+      - __cflb=1877559458; path=/; expires=Fri, 19-Jan-18 05:45:52 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3def98085eeb9a3a-MFE
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"payload":{"high":"3899.99","last":"3720.00","created_at":"2018-01-18T06:45:52+00:00","book":"ltc_mxn","volume":"4389.48137706","vwap":"3565.87439420","low":"3679.76","ask":"3787.64","bid":"3744.39"}}'
+    http_version: 
+  recorded_at: Thu, 18 Jan 2018 06:45:52 GMT
+recorded_with: VCR 4.0.0
