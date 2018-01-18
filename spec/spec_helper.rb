@@ -1,4 +1,18 @@
+require 'i18n'
+require 'net/http'
+require 'json'
+require 'ostruct'
+require 'crypto_bot/adapter'
+require 'crypto_bot/command'
+require 'crypto_bot/command/btc'
+require 'crypto_bot/command/eth'
+require 'crypto_bot/command/xrp'
+require 'crypto_bot/command/ltc'
+require 'crypto_bot/utils/string'
+require 'telegram/bot'
 require 'vcr'
+
+String.include CryptoBot::Utils::String
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
