@@ -11,6 +11,10 @@ require 'crypto_bot/command/ltc'
 require 'crypto_bot/utils/string'
 require 'telegram/bot'
 require 'vcr'
+require 'simplecov'
+require 'coveralls'
+
+Coveralls.wear!
 
 String.include CryptoBot::Utils::String
 

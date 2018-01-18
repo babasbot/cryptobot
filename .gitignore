@@ -1,3 +1,4 @@
 .ruby-version
 .env
 spec/examples.txt
+coverage/
