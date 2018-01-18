@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bitso.com/v3/ticker?book=eth_mxn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.bitso.com
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Thu, 18 Jan 2018 06:42:55 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcdca3196f7680cf2de18457cf982cccb1516257775; expires=Fri, 18-Jan-19
+        06:42:55 GMT; path=/; domain=.bitso.com; HttpOnly
+      - __cflb=3694793051; path=/; expires=Fri, 19-Jan-18 05:42:55 GMT
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3def93b939bb9a88-MFE
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"payload":{"high":"20499.96","last":"19990.00","created_at":"2018-01-18T06:42:56+00:00","book":"eth_mxn","volume":"5785.20587272","vwap":"17743.09213717","low":"19400.08","ask":"20329.81","bid":"19990.00"}}'
+    http_version: 
+  recorded_at: Thu, 18 Jan 2018 06:42:56 GMT
+recorded_with: VCR 4.0.0
